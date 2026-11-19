@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">
+    <!-- fix index -->
+    <!-- <a class="navbar-brand" href="index.html"> -->
+    <a class="navbar-brand" href={% url "pages:index" %}>      
       <i class="fas fa-utensils"></i> Food Agent
     </a>
     <button
@@ -14,23 +16,29 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <ul class="navbar-nav">
         <li class="nav-item active mr-3">
-          <a class="nav-link" href="index.html">Home</a>
+          <!-- index.html -->
+            <!-- fix index -->
+          <a class="nav-link" href={% url "pages:index" %}>Home</a>
         </li>
         <li class="nav-item mr-3">
+           <!-- fix listings -->
           <a class="nav-link" href="listings.html">Restaurants</a>
         </li>
         <li class="nav-item mr-3">
-          <a class="nav-link" href="about.html">About</a>
+           <!-- fix about -->
+          <a class="nav-link" href={% url "pages:about" %}>About</a>
         </li>
       </ul>
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item mr-3">
+           <!-- fix register -->
           <a class="nav-link" href="register.html"
             ><i class="fas fa-user-plus"></i> Register</a
           >
         </li>
         <li class="nav-item">
+           <!-- fix login -->
           <a class="nav-link" href="login.html"
             ><i class="fas fa-sign-in-alt"></i> Login</a
           >
